@@ -5,10 +5,10 @@ import {
   ACCEPT_ENCODING_HEADER,
   extractTop10Animes,
   extractAnimes,
-} from "../utils/index.js";
+} from "../utils/index.ts";
 import axios, { AxiosError } from "axios";
 import createHttpError, { type HttpError } from "http-errors";
-import type { ScrapedHomePage } from "../models/parsers/index.js";
+import type { ScrapedHomePage } from "../models/parsers/index.ts";
 import { load, type CheerioAPI, type SelectorType } from "cheerio";
 
 // /anime/home

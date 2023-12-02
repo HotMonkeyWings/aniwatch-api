@@ -1,5 +1,5 @@
 import { type RequestHandler } from "express";
-import { scrapeHomePage } from "../parsers/index.js";
+import { scrapeHomePage } from "../parsers/index.ts";
 
 // /anime/home
 const getHomePageInfo: RequestHandler<

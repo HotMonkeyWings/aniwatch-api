@@ -1,10 +1,10 @@
 import createHttpError from "http-errors";
 import { type RequestHandler } from "express";
-import { scrapeGenreAnime } from "../parsers/index.js";
+import { scrapeGenreAnime } from "../parsers/index.ts";
 import type {
   GenreAnimePathParams,
   GenreAnimeQueryParams,
-} from "../models/controllers/index.js";
+} from "../models/controllers/index.ts";
 
 // /anime/genre/${name}?page=${page}
 const getGenreAnime: RequestHandler<

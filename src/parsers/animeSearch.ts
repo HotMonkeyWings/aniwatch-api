@@ -5,11 +5,11 @@ import {
   ACCEPT_ENCODING_HEADER,
   extractMostPopularAnimes,
   extractAnimes,
-} from "../utils/index.js";
+} from "../utils/index.ts";
 import axios, { AxiosError } from "axios";
 import createHttpError, { type HttpError } from "http-errors";
 import { load, type CheerioAPI, type SelectorType } from "cheerio";
-import type { ScrapedAnimeSearchResult } from "../models/parsers/index.js";
+import type { ScrapedAnimeSearchResult } from "../models/parsers/index.ts";
 
 // /anime/search?q=${query}&page=${page}
 async function scrapeAnimeSearch(

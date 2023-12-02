@@ -10,7 +10,7 @@ import {
   getAnimeAboutInfo,
   getAnimeEpisodeSources,
   getAnimeSearchSuggestion,
-} from "../controllers/index.js";
+} from "../controllers/index.ts";
 
 const router: IRouter = Router();
 

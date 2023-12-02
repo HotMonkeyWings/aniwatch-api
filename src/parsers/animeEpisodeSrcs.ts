@@ -3,13 +3,13 @@ import {
   SRC_BASE_URL,
   retrieveServerId,
   USER_AGENT_HEADER,
-} from "../utils/index.js";
+} from "../utils/index.ts";
 import axios, { AxiosError } from "axios";
 import { load, type CheerioAPI } from "cheerio";
 import createHttpError, { type HttpError } from "http-errors";
 import { type AnimeServers, Servers } from "../models/anime.js";
-import { RapidCloud, StreamSB, StreamTape } from "../extractors/index.js";
-import { type ScrapedAnimeEpisodesSources } from "../models/parsers/index.js";
+import { RapidCloud, StreamSB, StreamTape } from "../extractors/index.ts";
+import { type ScrapedAnimeEpisodesSources } from "../models/parsers/index.ts";
 
 // vidtreaming -> 4
 // rapidcloud  -> 1

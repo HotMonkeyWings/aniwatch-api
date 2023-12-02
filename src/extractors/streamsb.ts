@@ -1,6 +1,6 @@
 import axios from "axios";
 import type { Video } from "../models/extractor.js";
-import { USER_AGENT_HEADER } from "../utils/index.js";
+import { USER_AGENT_HEADER } from "../utils/index.ts";
 
 class StreamSB {
   private serverName = "streamSB";

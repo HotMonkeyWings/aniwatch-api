@@ -9,7 +9,7 @@ import { ratelimit } from "./config/ratelimit.js";
 import errorHandler from "./config/errorHandler.js";
 import notFoundHandler from "./config/notFoundHandler.js";
 
-import animeRouter from "./routes/index.js";
+import animeRouter from "./routes/index.ts";
 
 config();
 const app: express.Application = express();

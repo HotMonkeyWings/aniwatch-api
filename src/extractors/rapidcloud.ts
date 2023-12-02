@@ -1,6 +1,6 @@
 import axios from "axios";
 import CryptoJS from "crypto-js";
-import { substringAfter, substringBefore } from "../utils/index.js";
+import { substringAfter, substringBefore } from "../utils/index.ts";
 import type { Video, Subtitle, Intro } from "../models/extractor.js";
 
 type extractReturn = { sources: Video[]; subtitles: Subtitle[] };

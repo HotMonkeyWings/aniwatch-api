@@ -1,11 +1,11 @@
 import createHttpError from "http-errors";
 import type { RequestHandler } from "express";
 import type { AnimeCategories } from "../models/anime.js";
-import { scrapeAnimeCategory } from "../parsers/index.js";
+import { scrapeAnimeCategory } from "../parsers/index.ts";
 import type {
   CategoryAnimePathParams,
   CategoryAnimeQueryParams,
-} from "../models/controllers/index.js";
+} from "../models/controllers/index.ts";
 
 // /anime/:category?page=${page}
 const getAnimeCategory: RequestHandler<

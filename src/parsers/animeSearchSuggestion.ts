@@ -3,11 +3,11 @@ import {
   SRC_AJAX_URL,
   USER_AGENT_HEADER,
   ACCEPT_ENCODING_HEADER,
-} from "../utils/index.js";
+} from "../utils/index.ts";
 import axios, { AxiosError } from "axios";
 import createHttpError, { type HttpError } from "http-errors";
 import { load, type CheerioAPI, type SelectorType } from "cheerio";
-import type { ScrapedAnimeSearchSuggestion } from "../models/parsers/index.js";
+import type { ScrapedAnimeSearchSuggestion } from "../models/parsers/index.ts";
 
 // /anime/search/suggest?q=${query}
 async function scrapeAnimeSearchSuggestion(

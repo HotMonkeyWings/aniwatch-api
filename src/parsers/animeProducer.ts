@@ -6,11 +6,11 @@ import {
   extractMostPopularAnimes,
   extractAnimes,
   extractTop10Animes,
-} from "../utils/index.js";
+} from "../utils/index.ts";
 import axios, { AxiosError } from "axios";
 import createHttpError, { type HttpError } from "http-errors";
 import { load, type CheerioAPI, type SelectorType } from "cheerio";
-import type { ScrapedProducerAnime } from "../models/parsers/index.js";
+import type { ScrapedProducerAnime } from "../models/parsers/index.ts";
 
 // /anime/producer/${name}?page=${page}
 async function scrapeProducerAnimes(

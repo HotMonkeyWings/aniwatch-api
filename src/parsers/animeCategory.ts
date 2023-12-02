@@ -5,12 +5,12 @@ import {
   USER_AGENT_HEADER,
   extractTop10Animes,
   ACCEPT_ENCODING_HEADER,
-} from "../utils/index.js";
+} from "../utils/index.ts";
 import axios, { AxiosError } from "axios";
 import { type AnimeCategories } from "../models/anime.js";
 import createHttpError, { type HttpError } from "http-errors";
 import { load, type CheerioAPI, type SelectorType } from "cheerio";
-import { type ScrapedAnimeCategory } from "../models/parsers/index.js";
+import { type ScrapedAnimeCategory } from "../models/parsers/index.ts";
 
 // /anime/:category?page=${page}
 async function scrapeAnimeCategory(
